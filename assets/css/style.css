@@ -1,20 +1,9 @@
 :root{
 --main-color:#f1a80a ;--bg-color:#f1a80a ;--bg-transparent:#f7b72dfc;
 }
-@font-face {
-font-family: 'JosefinSans-Bold';src: url(fonts/JosefinSans-Bold.ttf);
-}
-@font-face {
-font-family: 'Mukta';src: url(fonts/Mukta-Regular.ttf);
-}
-@font-face {
-font-family: 'JockeyOne';src: url(fonts/JockeyOne-Regular.ttf);
-}
-@font-face {
-font-family: 'DIN';src: url(fonts/DIN-Bold.ttf);
-}
 body {
 color: #272829;font-weight: 400;width:100vw;height:100vh;overflow-x:hidden; 
+font-family: "Baloo 2", sans-serif;
 }
 
 a {
@@ -24,13 +13,7 @@ a:hover {
 color: var(--main-color);text-decoration: none;
 }
 h1, h2, h3, h4 {
-font-family: "JosefinSans-Bold", sans-serif;
-}
-h5, h6 {
-font-family: "Mukta", sans-serif;
-}
-body.rtl h1, body.rtl h2, body.rtl h3, body.rtl h4 body.rtl h5, body.rtl h6 {
-font-family: "Tajawal" !important;
+font-family: "Josefin Sans", sans-serif;
 }
 img{
 	max-height: 350px;
@@ -418,10 +401,10 @@ max-width: 400px
 max-width: 90%;max-height: 400px;
 }
 #home h1 {
-margin: 0;font-size: 50px;font-weight: 700;line-height: 56px;color: #ddd;;font-family: "JosefinSans-Bold";text-transform: uppercase;
+margin: 0;font-size: 50px;font-weight: 700;line-height: 56px;color: #ddd;;font-family: "Josefin Sans";text-transform: uppercase;
 }
 #home h2 {
-margin: 0;margin-bottom:5px;font-size: 30px;line-height: 30px;color: #555;font-family: "Baloo Chettan 2";text-transform: uppercase;
+margin: 0;margin-bottom:5px;font-size: 30px;line-height: 30px;color: #555;font-family: "Roboto";text-transform: uppercase;
 }
 #home h1 span{
 color:var(--main-color);font-size:100px;margin: 15px 0 0 0;
@@ -502,10 +485,10 @@ section{
 
 }
 .home-aboutme h1{
-font-family:"JosefinSans-Bold";color:var(--main-color);margin-bottom:20px;
+font-family:"Josefin Sans";color:var(--main-color);margin-bottom:20px;
 }
 .home-aboutme p{
-color:#666;font-family: "Baloo Chettan 2";line-height: 30px;
+color:#666;font-family: "Baloo 2";line-height: 30px;
 }
 section {
 position: relative;width: 100vw;min-height: 100vh;display: flex;flex-direction: column;justify-content: center;padding:20px 0;
@@ -514,7 +497,7 @@ section#services {
 padding-bottom: 70px
 }
 .section-title {
-text-align: center;font-weight: 700;color:#777;font-size: 40px;margin-bottom: 80px;margin-top: 80px;position: relative;font-family:"Mukta";
+text-align: center;font-weight: 700;color:#777;font-size: 40px;margin-bottom: 80px;margin-top: 80px;position: relative;
 }
 .bg-orange .section-title{
 color:#eee;
@@ -666,30 +649,6 @@ background-color:#666;color:#fff;
 }
 
 }
-.resume .resume-title {
-font-size: 26px;font-weight: 700;margin-top: 20px;margin-bottom: 20px;color: #45505b;
-}
-.resume .resume-item {
-padding: 0 0 20px 20px;margin-top: -2px;border-left: 2px solid var(--main-color);position: relative;
-}
-.resume .resume-item h4 {
-line-height: 18px;font-size: 18px;font-weight: 600;text-transform: uppercase;font-family: "Poppins", sans-serif;color: var(--main-color);margin-bottom: 10px;
-}
-.resume .resume-item h5 {
-font-size: 16px;background: #f7f8f9;padding: 5px 15px;display: inline-block;font-weight: 600;margin-bottom: 10px;
-}
-.resume .resume-item ul {
-padding-left: 20px;
-}
-.resume .resume-item ul li {
-padding-bottom: 10px;
-}
-.resume .resume-item:last-child {
-padding-bottom: 0;
-}
-.resume .resume-item::before {
-content: "";position: absolute;width: 16px;height: 16px;border-radius: 50px;left: -9px;top: 0;background: #fff;border: 2px solid var(--main-color);
-}
 .work-wrapper{
 padding:10px;margin:0;
 }
@@ -762,7 +721,7 @@ opacity: 1;transition: .3s
   position: relative;
 }
 .work-container .work-details span p{
-position: relative;top: -30px;font-size: 22px;font-family: "JosefinSans-Bold";text-transform: uppercase;font-weight: 700;transition: ease all .4s;
+position: relative;top: -30px;font-size: 22px;font-family: "Josefin Sans";text-transform: uppercase;font-weight: 700;transition: ease all .4s;
 }
 .work-container:hover .work-details span p{
 top:0;transition: ease all .4s
@@ -825,7 +784,7 @@ height:60px;text-transform: uppercase;color:#eee;
 color:var(--main-color);
 }
 .service-title h5{
-font-weight: 400;font-family: "JosefinSans-Bold";text-transform: uppercase;
+font-weight: 400;font-family: "Josefin Sans";text-transform: uppercase;
 }
 .service-body{
 font-size:16px;padding-bottom:15px;color:#333;
@@ -874,42 +833,6 @@ max-height: 200px;max-width:90%
 }
 .services-include p{
 color:#666;
-}
-.project-process{
-margin-bottom:150px
-}
-.project-process-num{
-width: 200px;height: 105px;background: #fff;color:var(--main-color);position: relative;font-size:100px;font-family:serif;font-weight:700;margin:0 auto
-}
-.project-process-num::before {
-content: "";position: absolute;top: -65px;left: 0;width: 0;height: 0;border-left: 100px solid transparent;border-right: 100px solid transparent;border-bottom: 65px solid #fff;
-}
-.project-process-num::after {
-content: "";position: absolute;bottom: -65px;left: 0;width: 0;height: 0;border-left: 100px solid transparent;border-right: 100px solid transparent;border-top: 65px solid #fff;
-}
-.project-process-text h3{
-font-weight:700;padding-bottom: 10px;margin-bottom: 10px;text-transform: uppercase;
-}
-@media(max-width:768px){
-.proccess-container{
-  width:85%;  margin:0 auto;  text-align: center;
-}
-.project-process-text h3{
-
-}
-.project-process-num-container{
-  top:-60px;
-}
-.project-process-num{
-  width: 130px;  height: 70px;  font-size: 80px;
-}
-.project-process-num::before {
-  top: -40px;  border-right: 65px solid transparent;  border-left: 65px solid transparent;  border-bottom: 40px solid #fff;
-}
-.project-process-num::after {
-  bottom: -40px;  border-left: 65px solid transparent;  border-right: 65px solid transparent;  border-top: 40px solid #fff;
-}
-
 }
 .contact-validate{
 font-size:14px;
@@ -1045,7 +968,7 @@ padding:0;margin:0;
 
 }
 footer h3 {
-font-size: 36px;font-weight: 700;position: relative;font-family: "Poppins", sans-serif;padding: 0;margin: 0 0 15px 0;
+font-size: 36px;font-weight: 700;position: relative;padding: 0;margin: 0 0 15px 0;
 }
 footer p {
 font-size: 15;font-style: italic;padding: 0;margin: 0 0 40px 0;
@@ -1060,7 +983,7 @@ footer .social-links a:hover {
 background: var(--main-color);color: #ffffff;
 }
 footer .copyright {
-margin: 20px 0;margin-top:50px;font-size:13px;font-family:"JosefinSans-Bold";
+margin: 20px 0;margin-top:50px;font-size:13px;font-family:"Josefin Sans";
 }
 select.form-control{
 height: calc(1.5em + .75rem + 8px)
